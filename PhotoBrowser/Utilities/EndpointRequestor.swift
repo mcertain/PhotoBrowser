@@ -9,39 +9,26 @@
 import Foundation
 import UIKit
 
-let FLICKR_PHOTO_SEARCH_PREFIX:String = "https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=675894853ae8ec6c242fa4c077bcf4a0&text="
-let FLICKR_PHOTO_SEARCH_SUFFIX:String = "&extras=url_s,url_m,date_upload,views&format=json&nojsoncallback=1&sort=relevance&per_page=" + String(RESULTS_PER_PAGE) + "&page="
-
-enum PhotoDataEndpoint: Int {
-    case PHOTO_LISTING
-    case PHOTO_IMAGE_THUMBNAIL
-}
-
 class EndpointRequestor {
     /// We store all ongoing tasks here to avoid duplicating tasks.
     static var tasks = [URLSessionTask]()
     
-    static func requestEndpointData(endpoint: PhotoDataEndpoint,
+    static func requestEndpointData(endpointDescriptor: EndpointDescriptorBase,
                                     withUIViewController: UIViewController,
                                     errorHandler: (() -> Void)?,
                                     successHandler: ((_ receivedData: Data?, _ withArgument: AnyObject?) -> Void)?,
                                     busyTheView: Bool,
-                                    withArgument: AnyObject?=nil) {
-        var remoteLocation: URL?
-        switch endpoint {
-        case .PHOTO_LISTING:
-            remoteLocation = URL(string: FLICKR_PHOTO_SEARCH_PREFIX + PhotoSearchController.searchString! + FLICKR_PHOTO_SEARCH_SUFFIX + String(withArgument as! Int))
-        case .PHOTO_IMAGE_THUMBNAIL:
-            remoteLocation = (withArgument as! URL)
-        }
+                                    withTargetArgument: AnyObject?=nil) {
         
+        // Use the provide endpoint descriptor to get the target URL using the supplied target arguments
+        let remoteLocation: URL? = endpointDescriptor.getTargetURL(withArgument: withTargetArgument)
         guard remoteLocation != nil else {
             return
         }
         
+        // Don't attempt to fetch the same resource twice while one fetch request is pending
         guard tasks.index(where: { $0.originalRequest?.url == remoteLocation }) == nil else {
-            // We're already downloading the image.
-            print("Attempted to download the same resource more than once.")
+            print("Attempted to fetch the same resource more than once before the previous fetch had completed.")
             return
         }
         
@@ -78,7 +65,7 @@ class EndpointRequestor {
                 return
             }
             
-            successHandler?(content, withArgument)
+            successHandler?(content, withTargetArgument)
             tasks.remove(at: taskIndex)
         }
         task.resume()

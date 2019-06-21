@@ -91,12 +91,12 @@ class PhotoSearchController: UITableViewController, UITableViewDataSourcePrefetc
                 }
             }
         
-            EndpointRequestor.requestEndpointData(endpoint: .PHOTO_LISTING,
+            EndpointRequestor.requestEndpointData(endpointDescriptor: FlickrEndpointDescriptor(endpoint: .PHOTO_LISTING),
                                                   withUIViewController: self,
                                                   errorHandler: nil,
                                                   successHandler: successHandler,
                                                   busyTheView: true,
-                                                  withArgument: atPage as AnyObject)
+                                                  withTargetArgument: atPage as AnyObject)
         }
     }
     
@@ -130,12 +130,12 @@ class PhotoSearchController: UITableViewController, UITableViewDataSourcePrefetc
                 }
             }
             
-            EndpointRequestor.requestEndpointData(endpoint: .PHOTO_IMAGE_THUMBNAIL,
+            EndpointRequestor.requestEndpointData(endpointDescriptor: FlickrEndpointDescriptor(endpoint: .PHOTO_IMAGE_THUMBNAIL),
                                                   withUIViewController: self,
                                                   errorHandler: nil,
                                                   successHandler: successHandler,
                                                   busyTheView: false,
-                                                  withArgument: imageURL as AnyObject)
+                                                  withTargetArgument: imageURL as AnyObject)
         }
         else {
             // Otherwise, if it's already cached then display it

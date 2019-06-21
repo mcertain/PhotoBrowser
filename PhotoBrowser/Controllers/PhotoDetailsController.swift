@@ -182,13 +182,13 @@ class PhotoDetailsController : UIViewController, UINavigationControllerDelegate 
                     self.photoImageView.image = self.photoDetails?.getUIImageData()
                 }
             }
-            
-            EndpointRequestor.requestEndpointData(endpoint: .PHOTO_IMAGE_THUMBNAIL,
+
+            EndpointRequestor.requestEndpointData(endpointDescriptor: FlickrEndpointDescriptor(endpoint: .PHOTO_IMAGE_THUMBNAIL),
                                                   withUIViewController: self,
                                                   errorHandler: nil,
                                                   successHandler: successHandler,
                                                   busyTheView: false,
-                                                  withArgument: imageURL as AnyObject)
+                                                  withTargetArgument: imageURL as AnyObject)
         }
     }
 }
