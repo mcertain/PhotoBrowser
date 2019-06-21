@@ -18,6 +18,8 @@ enum PhotoDataEndpoint: Int {
 }
 
 class EndpointRequestor {
+    /// We store all ongoing tasks here to avoid duplicating tasks.
+    static var tasks = [URLSessionTask]()
     
     static func requestEndpointData(endpoint: PhotoDataEndpoint,
                                     withUIViewController: UIViewController,
@@ -37,13 +39,26 @@ class EndpointRequestor {
             return
         }
         
+        guard tasks.index(where: { $0.originalRequest?.url == remoteLocation }) == nil else {
+            // We're already downloading the image.
+            print("Attempted to download the same resource more than once.")
+            return
+        }
+        
         // Just incase it takes a while to get a response, busy the view so the user knows something
         // is happening
         var busyViewOverlay: UIViewController?
         if(busyTheView == true) {
             busyViewOverlay = withUIViewController.busyTheViewWithIndicator(currentUIViewController: withUIViewController)
         }
+        
         let task = URLSession.shared.dataTask(with: remoteLocation!) {(data, response, error) in
+            // Find and remove task reference once the content processing is done
+            guard let taskIndex = tasks.index(where: { $0.originalRequest?.url == remoteLocation }) else {
+                print("Task for URL was not found.")
+                return
+            }
+            
             // Once the response comes back, then the view can be unbusied and updated
             if(busyTheView == true) {
                 withUIViewController.unbusyTheViewWithIndicator(currentUIViewController: withUIViewController, busyView: busyViewOverlay)
@@ -53,16 +68,20 @@ class EndpointRequestor {
             guard error == nil else {
                 print("URL Request returned with error.")
                 errorHandler?()
+                tasks.remove(at: taskIndex)
                 return
             }
             guard let content = data else {
                 print("There was no data at the requested URL.")
                 errorHandler?()
+                tasks.remove(at: taskIndex)
                 return
             }
             
             successHandler?(content, withArgument)
+            tasks.remove(at: taskIndex)
         }
         task.resume()
+        tasks.append(task)
     }
 }

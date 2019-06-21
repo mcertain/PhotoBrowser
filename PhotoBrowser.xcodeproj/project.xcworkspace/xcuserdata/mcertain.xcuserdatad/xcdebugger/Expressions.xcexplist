@@ -34,13 +34,18 @@
          contextName = "specialized closure #1 in static EndpointRequestor.requestEndpointData(endpoint:withUIViewController:errorHandler:successHandler:busyTheView:withArgument:):EndpointRequestor.swift">
       </ContextState>
       <ContextState
-         contextName = "static EndpointRequestor.requestEndpointData(endpoint:withUIViewController:errorHandler:successHandler:busyTheView:withArgument:):EndpointRequestor.swift">
-      </ContextState>
-      <ContextState
          contextName = "PhotoSearchController.searchBarSearchButtonClicked(_:):PhotoSearchController.swift">
          <PersistentStrings>
             <PersistentString
                value = "self.tableView.numberOfSections">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "static EndpointRequestor.requestEndpointData(endpoint:withUIViewController:errorHandler:successHandler:busyTheView:withArgument:):EndpointRequestor.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "tasks">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

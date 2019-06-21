@@ -107,6 +107,12 @@ class PhotoSearchController: UITableViewController, UITableViewDataSourcePrefetc
         let photoDetails = pPhotoDataManager?.getPhotoDetails(atIndex: atIndex)
         let thumbnailImage = photoDetails?.getUIImageData()
         if(thumbnailImage == nil) {
+            // Return early if there's no URL to fetch data
+            guard let imageURL = photoDetails?.getImageThumbnailURL() else {
+                print("There is no image index \(atIndex) for photo with ID: " + String((photoDetails?.getPhotoID())!))
+                return
+            }
+            
             let successHandler = { (receivedData: Data?, withArgument: AnyObject?) -> Void in
                 guard let content = receivedData else {
                     print("There was no data at the requested URL.")
@@ -124,10 +130,6 @@ class PhotoSearchController: UITableViewController, UITableViewDataSourcePrefetc
                 }
             }
             
-            guard let imageURL = photoDetails?.getImageThumbnailURL() else {
-                print("There is no image index \(atIndex) for photo with ID: " + String((photoDetails?.getPhotoID())!))
-                return
-            }
             EndpointRequestor.requestEndpointData(endpoint: .PHOTO_IMAGE_THUMBNAIL,
                                                   withUIViewController: self,
                                                   errorHandler: nil,
@@ -170,6 +172,9 @@ class PhotoSearchController: UITableViewController, UITableViewDataSourcePrefetc
             let photoID: String? = pPhotoDataManager?.getPhotoDetails(atIndex: idx)?.getPhotoID()
             self.fetchPhotoThumbnailImage(forCell: cell, atIndex: idx,
                                       withID: photoID!)
+        }
+        else {
+            print("Photo Cache is not available")
         }
 
         return cell

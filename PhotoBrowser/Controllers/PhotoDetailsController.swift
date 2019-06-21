@@ -162,6 +162,12 @@ class PhotoDetailsController : UIViewController, UINavigationControllerDelegate 
         // If the photo poster image hasn't be stored in cache yet, then fetch and store it
         let thumbnailImage = photoDetails?.imageThumbnailData
         if(thumbnailImage == nil) {
+            // Return early if there's no URL to fetch data
+            guard let imageURL = photoDetails?.getImageThumbnailURL() else {
+                print("There is no image for photo with ID: " + String((photoDetails?.getPhotoID())!))
+                return
+            }
+            
             let successHandler = { (receivedData: Data?, withArgument: AnyObject?) -> Void in
                 guard let thumbnailImageData = receivedData else {
                     print("There was no data at the requested URL.")
@@ -177,10 +183,6 @@ class PhotoDetailsController : UIViewController, UINavigationControllerDelegate 
                 }
             }
             
-            guard let imageURL = photoDetails?.getImageThumbnailURL() else {
-                print("There is no image for photo with ID: " + String((photoDetails?.getPhotoID())!))
-                return
-            }
             EndpointRequestor.requestEndpointData(endpoint: .PHOTO_IMAGE_THUMBNAIL,
                                                   withUIViewController: self,
                                                   errorHandler: nil,
