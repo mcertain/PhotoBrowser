@@ -177,13 +177,16 @@ class PhotoDetailsController : UIViewController, UINavigationControllerDelegate 
                 }
             }
             
-            let posterURL = photoDetails?.getImageThumbnailURL()
+            guard let imageURL = photoDetails?.getImageThumbnailURL() else {
+                print("There is no image for photo with ID: " + String((photoDetails?.getPhotoID())!))
+                return
+            }
             EndpointRequestor.requestEndpointData(endpoint: .PHOTO_IMAGE_THUMBNAIL,
                                                   withUIViewController: self,
                                                   errorHandler: nil,
                                                   successHandler: successHandler,
                                                   busyTheView: false,
-                                                  withArgument: posterURL as AnyObject)
+                                                  withArgument: imageURL as AnyObject)
         }
     }
 }

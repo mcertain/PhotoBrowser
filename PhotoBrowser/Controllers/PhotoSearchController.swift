@@ -64,7 +64,7 @@ class PhotoSearchController: UITableViewController, UITableViewDataSourcePrefetc
         }
     }
     
-    func fetchPhotoData(atPage: Int) {
+    func fetchPhotoData(atPage: Int, withIndexPaths: [IndexPath]?=nil) {
         let pPhotoDataManager = PhotoDataManager.GetInstance()
         
         // If the page isn't in cache, then go ahead and download it
@@ -78,9 +78,16 @@ class PhotoSearchController: UITableViewController, UITableViewDataSourcePrefetc
                 }
                 
                 // When the data is successfully retrieved and stored, then reload the table data
-                // from the Photo Data Manager's cache
+                // from the Photo Data Manager's cache but only for the rows just loaded
                 DispatchQueue.main.async {
-                    self.tableView.reloadData()
+                    let cachedIndexPaths = withIndexPaths
+                    if(cachedIndexPaths == nil || cachedIndexPaths?.count == 0) {
+                        // Reload all the rows for the first cache or when data is fetched outside of prefetch
+                        self.tableView.reloadData()
+                    }
+                    else {
+                        self.tableView.reloadRows(at: cachedIndexPaths!, with: .automatic)
+                    }
                 }
             }
         
@@ -111,22 +118,29 @@ class PhotoSearchController: UITableViewController, UITableViewDataSourcePrefetc
                 
                 // Then update only the cell that needs to display the photo cover image
                 DispatchQueue.main.async {
-                    forCell.photoImage.image = UIImage(data: content)
+                    if(self.tableView.isCellVisible(section: 0, row: atIndex)) {
+                        forCell.photoImage.image = UIImage(data: content)
+                    }
                 }
             }
             
-            let posterURL = photoDetails?.getImageThumbnailURL()
+            guard let imageURL = photoDetails?.getImageThumbnailURL() else {
+                print("There is no image index \(atIndex) for photo with ID: " + String((photoDetails?.getPhotoID())!))
+                return
+            }
             EndpointRequestor.requestEndpointData(endpoint: .PHOTO_IMAGE_THUMBNAIL,
                                                   withUIViewController: self,
                                                   errorHandler: nil,
                                                   successHandler: successHandler,
                                                   busyTheView: false,
-                                                  withArgument: posterURL as AnyObject)
+                                                  withArgument: imageURL as AnyObject)
         }
         else {
             // Otherwise, if it's already cached then display it
             DispatchQueue.main.async {
-                forCell.photoImage.image = thumbnailImage
+                if(self.tableView.isCellVisible(section: 0, row: atIndex)) {
+                    forCell.photoImage.image = thumbnailImage
+                }
             }
         }
     }

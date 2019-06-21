@@ -135,6 +135,17 @@ extension UIView {
     
 }
 
+extension UITableView {
+    // Check if cell at the specific section and row is visible
+    // Should only be called from the main UI thread
+    func isCellVisible(section:Int, row: Int) -> Bool {
+        guard let indexes = self.indexPathsForVisibleRows else {
+            return false
+        }
+        return indexes.contains {$0.section == section && $0.row == row }
+    }
+}
+
 extension Int {
     private static var numberFormatter: NumberFormatter = {
         let numberFormatter = NumberFormatter()
