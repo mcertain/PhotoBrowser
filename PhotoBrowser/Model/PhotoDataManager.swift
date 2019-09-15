@@ -177,8 +177,11 @@ class PhotoDataManager {
                 return false
             }
             
-            if(cachedPages.count == (forPage-1)) {
+            if( (receivedPage.stat == "ok") && (cachedPages.count == (forPage-1)) ) {
                 cachedPages.append(receivedPage)
+            }
+            else {
+                return false
             }
         }
         return true
@@ -205,6 +208,12 @@ class PhotoDataManager {
         let pageIdx = atIndex % RESULTS_PER_PAGE
         
         guard cachedPages.indices.contains(pageCount) == true else {
+            return nil
+        }
+        guard ((cachedPages[pageCount]?.photos) != nil) else {
+            return nil
+        }
+        guard cachedPages[pageCount]?.photos?.photo?.indices.contains(pageIdx) == true else {
             return nil
         }
         guard cachedPages[pageCount]?.photos?.photo?[pageIdx] != nil else {

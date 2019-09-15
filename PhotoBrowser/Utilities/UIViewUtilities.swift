@@ -63,12 +63,12 @@ class SpinnerViewController: UIViewController {
 extension UIViewController {
     
     // Extensions to busy/unbusy any UIViewController
-    func busyTheViewWithIndicator(currentUIViewController: UIViewController?) ->UIViewController? {
-        return SpinnerViewController.createSpinnerView(currentUIViewController: currentUIViewController)
+    func busyTheViewWithIndicator() ->UIViewController? {
+        return SpinnerViewController.createSpinnerView(currentUIViewController: self)
     }
     
-    func unbusyTheViewWithIndicator(currentUIViewController: UIViewController?, busyView: UIViewController?) {
-        SpinnerViewController.stopSpinnerView(currentUIViewController: currentUIViewController, busyView: busyView)
+    func unbusyTheViewWithIndicator(busyView: UIViewController?) {
+        SpinnerViewController.stopSpinnerView(currentUIViewController: self, busyView: busyView)
     }
 }
 
@@ -157,4 +157,8 @@ extension Int {
     var commaDelimited: String {
         return Int.numberFormatter.string(from: NSNumber(value: self)) ?? ""
     }
+}
+
+extension String: LocalizedError {
+    public var errorDescription: String? { return self }
 }

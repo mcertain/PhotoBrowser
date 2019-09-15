@@ -3,16 +3,16 @@
    version = "1.0">
    <ContextStates>
       <ContextState
-         contextName = "MovieDataManager.setExternalIDs(atIndex:withData:):MovieDataManager.swift">
+         contextName = "specialized closure #1 in static EndpointRequestor.requestEndpointData(endpoint:withUIViewController:errorHandler:successHandler:busyTheView:withArgument:):EndpointRequestor.swift">
       </ContextState>
       <ContextState
-         contextName = "MovieDetailsController.setupView(withDetails:):MovieDetailsController.swift">
+         contextName = "closure #1 in AvailableMovieController.fetchMovieData():AvailableMovieController.swift">
       </ContextState>
       <ContextState
-         contextName = "MovieDataManager.AddToWatchList(newItem:):MovieDataManager.swift">
+         contextName = "MockedEndpointRequestTask.loadCachedImage(urlString:searchString:pageNumber:):UTMockedObjects.swift">
       </ContextState>
       <ContextState
-         contextName = "MovieDataManager.storeMovieData(receivedJSONData:):MovieDataManager.swift">
+         contextName = "MovieDetailsController.requestMovieDetails():MovieDetailsController.swift">
       </ContextState>
       <ContextState
          contextName = "closure #1 in MovieDetailsController.requestMovieDetails():MovieDetailsController.swift">
@@ -23,54 +23,55 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "static MovieDetailsController.AddToWatchList(newItem:):MovieDetailsController.swift">
+         contextName = "PhotoSearchController.fetchPhotoThumbnailImage(forCell:atIndex:withID:):PhotoSearchController.swift">
          <PersistentStrings>
             <PersistentString
-               value = "watchList">
+               value = "(atIndex/RESULTS_PER_PAGE)">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "specialized closure #1 in static EndpointRequestor.requestEndpointData(endpoint:withUIViewController:errorHandler:successHandler:busyTheView:withArgument:):EndpointRequestor.swift">
+         contextName = "FlickrEndpointDescriptor.getTargetURL():FlickrEndpointDescriptor.swift">
       </ContextState>
       <ContextState
-         contextName = "PhotoSearchController.searchBarSearchButtonClicked(_:):PhotoSearchController.swift">
+         contextName = "MovieDataManager.setExternalIDs(atIndex:withData:):MovieDataManager.swift">
+      </ContextState>
+      <ContextState
+         contextName = "MovieDetailsController.addToWatchListButtonAction(_:):MovieDetailsController.swift">
          <PersistentStrings>
             <PersistentString
-               value = "self.tableView.numberOfSections">
+               value = "MovieDetailsController.watchListCache">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "static EndpointRequestor.requestEndpointData(endpoint:withUIViewController:errorHandler:successHandler:busyTheView:withArgument:):EndpointRequestor.swift">
+         contextName = "specialized closure #2 in static EndpointRequestor.requestEndpointData(endpointDescriptor:):EndpointRequestor.swift">
          <PersistentStrings>
             <PersistentString
-               value = "tasks">
+               value = "response.url">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "MovieDataManager.storeMovieData(receivedJSONData:forPage:):MovieDataManager.swift">
+         contextName = "MovieDataManager.AddToWatchList(newItem:):MovieDataManager.swift">
+      </ContextState>
+      <ContextState
+         contextName = "static TestVectors.initializeJsonStrings():TestVectors.swift">
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in MovieDetailsController.dispatchViewUpdate():MovieDetailsController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "MovieDetailsController.setupView(withDetails:):MovieDetailsController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in static TestVectors.captureVectorImages(withArgument:):TestVectors.swift">
          <PersistentStrings>
             <PersistentString
-               value = "cachedPages.count">
+               value = "imageMap[fetchedPageIdx-1]">
             </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "closure #1 in AvailableMovieController.fetchMovieData():AvailableMovieController.swift">
-      </ContextState>
-      <ContextState
-         contextName = "MovieDataManager.storeExternalIDs(atIndex:receivedJSONData:):MovieDataManager.swift">
-      </ContextState>
-      <ContextState
-         contextName = "MovieDetailsController.requestMovieDetails():MovieDetailsController.swift">
-      </ContextState>
-      <ContextState
-         contextName = "MovieDataManager.getNumberUserVotes(atIndex:):MovieDataManager.swift">
-         <PersistentStrings>
             <PersistentString
-               value = "resultPages?.results[atIndex].vote_count">
+               value = "imageMap">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -83,7 +84,70 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "closure #1 in MovieDetailsController.dispatchViewUpdate():MovieDetailsController.swift">
+         contextName = "closure #1 in PhotoSearchController.fetchPhotoData(atPage:withIndexPaths:):PhotoSearchController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in PhotoBrowserUnitTests.testExample():PhotoBrowserUnitTests.swift">
+      </ContextState>
+      <ContextState
+         contextName = "MovieDataManager.storeExternalIDs(receivedJSONData:):MovieDataManager.swift">
+      </ContextState>
+      <ContextState
+         contextName = "static TestVectors.captureVectors(receivedData:withArgument:):TestVectors.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "imageMap.count">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "static MovieDetailsController.AddToWatchList(newItem:):MovieDetailsController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "watchList">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "FlickrEndpointDescriptor.getSearchString():FlickrEndpointDescriptor.swift">
+      </ContextState>
+      <ContextState
+         contextName = "static TestVectors.captureVectorData(receivedData:withArgument:):TestVectors.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "imageMap">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "AvailableMovieController.tableView(_:prefetchRowsAt:):AvailableMovieController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "indexPaths[indexPaths.count-1].row">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "MovieDataManager.storeExternalIDs(atIndex:receivedJSONData:):MovieDataManager.swift">
+      </ContextState>
+      <ContextState
+         contextName = "PhotoSearchController.searchBarSearchButtonClicked(_:):PhotoSearchController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.tableView.numberOfSections">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "MockedEndpointRequestTask.getOriginalURLRequest():UTMockedObjects.swift">
+      </ContextState>
+      <ContextState
+         contextName = "MovieDataManager.storeMovieData(receivedJSONData:forPage:):MovieDataManager.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "cachedPages.count">
+            </PersistentString>
+         </PersistentStrings>
       </ContextState>
       <ContextState
          contextName = "MovieDataManager.getMovieCount():MovieDataManager.swift">
@@ -94,18 +158,7 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "MovieDataManager.setExternalIDs(withData:):MovieDataManager.swift">
-      </ContextState>
-      <ContextState
-         contextName = "MovieDataManager.storeExternalIDs(receivedJSONData:):MovieDataManager.swift">
-      </ContextState>
-      <ContextState
-         contextName = "MovieDetailsController.addToWatchListButtonAction(_:):MovieDetailsController.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "MovieDetailsController.watchListCache">
-            </PersistentString>
-         </PersistentStrings>
+         contextName = "FlickrEndpointDescriptor.getCachedPageIndex():FlickrEndpointDescriptor.swift">
       </ContextState>
       <ContextState
          contextName = "MovieDataManager.getVoteStarRating(atIndex:):MovieDataManager.swift">
@@ -114,12 +167,45 @@
          contextName = "static EndpointRequestor.openMovieLink(withEndpoint:usingMovieID:):EndpointRequestor.swift">
       </ContextState>
       <ContextState
-         contextName = "AvailableMovieController.tableView(_:prefetchRowsAt:):AvailableMovieController.swift">
+         contextName = "MovieDataManager.storeMovieData(receivedJSONData:):MovieDataManager.swift">
+      </ContextState>
+      <ContextState
+         contextName = "MovieDataManager.setExternalIDs(withData:):MovieDataManager.swift">
+      </ContextState>
+      <ContextState
+         contextName = "MovieDataManager.getNumberUserVotes(atIndex:):MovieDataManager.swift">
          <PersistentStrings>
             <PersistentString
-               value = "indexPaths[indexPaths.count-1].row">
+               value = "resultPages?.results[atIndex].vote_count">
             </PersistentString>
          </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "static EndpointRequestor.requestEndpointData(endpoint:withUIViewController:errorHandler:successHandler:busyTheView:withArgument:):EndpointRequestor.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "tasks">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in closure #2 in static EndpointRequestor.requestEndpointData(endpointDescriptor:):EndpointRequestor.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "data">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "static TestVectors.captureVectorImages(withArgument:):TestVectors.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "imageMap">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "MockedEndpointRequestTask.executeRequest(with:responseHandler:):UTMockedObjects.swift">
       </ContextState>
    </ContextStates>
 </VariablesViewState>

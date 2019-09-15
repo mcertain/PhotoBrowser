@@ -38,6 +38,16 @@
                ReferencedContainer = "container:PhotoBrowser.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "8F049EA5232B61B9009EA222"
+               BuildableName = "PhotoBrowserUnitTests.xctest"
+               BlueprintName = "PhotoBrowserUnitTests"
+               ReferencedContainer = "container:PhotoBrowser.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

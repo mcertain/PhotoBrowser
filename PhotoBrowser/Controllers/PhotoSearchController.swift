@@ -17,11 +17,8 @@ class PhotoSearchController: UITableViewController, UITableViewDataSourcePrefetc
         // Clear Out Existing cache first
         PhotoDataManager.GetInstance()?.clearStoredCache()
         
-        // Scroll back to beginnning of table
-        if(self.tableView.numberOfRows(inSection: 0) > 0) {
-            let indexPath = IndexPath(row: 0, section: 0)
-            self.tableView.scrollToRow(at: indexPath, at: .top, animated: true)
-        }
+        // Reload the Table View to clear out all cell rows
+        self.tableView.reloadData()
         
         // Now set the new search string criteria and load the first page
         PhotoSearchController.searchString = searchController.searchBar.text?.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)
@@ -70,7 +67,8 @@ class PhotoSearchController: UITableViewController, UITableViewDataSourcePrefetc
         // If the page isn't in cache, then go ahead and download it
         if((pPhotoDataManager?.pageCacheExists(atPage: atPage))! == false) {
             let successHandler = { (receivedData: Data?, withArgument: AnyObject?) -> Void in
-                let fetchedPageIdx = (withArgument as! Int)
+                let searchParams = withArgument as! TargetArguments
+                let fetchedPageIdx = searchParams.cachedPageIndex!
                 guard (pPhotoDataManager?.storePhotoData(receivedJSONData: receivedData,
                                                          forPage: fetchedPageIdx))! else {
                     print("JSON data parsing failed.")
@@ -91,12 +89,15 @@ class PhotoSearchController: UITableViewController, UITableViewDataSourcePrefetc
                 }
             }
         
-            EndpointRequestor.requestEndpointData(endpointDescriptor: FlickrEndpointDescriptor(endpoint: .PHOTO_LISTING),
-                                                  withUIViewController: self,
-                                                  errorHandler: nil,
-                                                  successHandler: successHandler,
-                                                  busyTheView: true,
-                                                  withTargetArgument: atPage as AnyObject)
+            EndpointRequestor.requestEndpointData(endpointDescriptor: FlickrEndpointDescriptor(endpoint: .PHOTO_LISTING,
+                                                                                               endpointRequestTask: EndpointRequestor.getDefaultEndpointRequestTask(),
+                                                                                               errorHandler: nil,
+                                                                                               successHandler: successHandler,
+                                                                                               withUIViewController: self,
+                                                                                               busyTheView: true,
+                                                                                               withTargetArgument: TargetArguments(cachedPageIndex: atPage,
+                                                                                                                                   searchString: PhotoSearchController.searchString,
+                                                                                                                                   pageURL: nil) as AnyObject))
         }
     }
     
@@ -129,13 +130,16 @@ class PhotoSearchController: UITableViewController, UITableViewDataSourcePrefetc
                     }
                 }
             }
-            
-            EndpointRequestor.requestEndpointData(endpointDescriptor: FlickrEndpointDescriptor(endpoint: .PHOTO_IMAGE_THUMBNAIL),
-                                                  withUIViewController: self,
-                                                  errorHandler: nil,
-                                                  successHandler: successHandler,
-                                                  busyTheView: false,
-                                                  withTargetArgument: imageURL as AnyObject)
+            let cachedPage = (atIndex / RESULTS_PER_PAGE) + 1
+            EndpointRequestor.requestEndpointData(endpointDescriptor: FlickrEndpointDescriptor(endpoint: .PHOTO_IMAGE_THUMBNAIL,
+                                                                                               endpointRequestTask: EndpointRequestor.getDefaultEndpointRequestTask(),
+                                                                                               errorHandler: nil,
+                                                                                               successHandler: successHandler,
+                                                                                               withUIViewController: self,
+                                                                                               busyTheView: false,
+                                                                                               withTargetArgument: TargetArguments(cachedPageIndex: cachedPage,
+                                                                                                                                   searchString: PhotoSearchController.searchString,
+                                                                                                                                   pageURL: imageURL) as AnyObject))
         }
         else {
             // Otherwise, if it's already cached then display it

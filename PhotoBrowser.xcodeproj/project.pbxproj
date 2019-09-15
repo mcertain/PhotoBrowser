@@ -9,6 +9,20 @@
 /* Begin PBXBuildFile section */
 		8F014FF522BCDEDA00B509CB /* EndpointDescriptorBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F014FF422BCDEDA00B509CB /* EndpointDescriptorBase.swift */; };
 		8F014FF722BCE11100B509CB /* FlickrEndpointDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F014FF622BCE11100B509CB /* FlickrEndpointDescriptor.swift */; };
+		8F049EA9232B61B9009EA222 /* PhotoBrowserUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F049EA8232B61B9009EA222 /* PhotoBrowserUnitTests.swift */; };
+		8F049EB3232BF1B6009EA222 /* UTMockedObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F049EB2232BF1B6009EA222 /* UTMockedObjects.swift */; };
+		8F049EB4232C1ED4009EA222 /* EndpointRequestor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE79F8122695CDE006468A9 /* EndpointRequestor.swift */; };
+		8F049EB5232C1EE2009EA222 /* EndpointDescriptorBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F014FF422BCDEDA00B509CB /* EndpointDescriptorBase.swift */; };
+		8F049EB6232C1EE6009EA222 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F25BCA72266596500BA2438 /* Reachability.swift */; };
+		8F049EB7232C1EEA009EA222 /* NetworkAvailability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F25BCA92266670900BA2438 /* NetworkAvailability.swift */; };
+		8F049EB8232C1EED009EA222 /* UIViewUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F25BCAB22666E4000BA2438 /* UIViewUtilities.swift */; };
+		8F049EB9232C1EF1009EA222 /* PhotoDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F25BCA42265CC1F00BA2438 /* PhotoDetailsController.swift */; };
+		8F049EBA232C1EF4009EA222 /* FavoriteListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F70A59A22B0D45200FB6612 /* FavoriteListController.swift */; };
+		8F049EBB232C1EF7009EA222 /* PhotoSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F25BC862265159900BA2438 /* PhotoSearchController.swift */; };
+		8F049EBC232C1EFC009EA222 /* PhotoListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F25BCA022659C7800BA2438 /* PhotoListCell.swift */; };
+		8F049EBD232C1F0C009EA222 /* PhotoListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F25BCA122659C7800BA2438 /* PhotoListCell.xib */; };
+		8F049EBE232C1F13009EA222 /* FlickrEndpointDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F014FF622BCE11100B509CB /* FlickrEndpointDescriptor.swift */; };
+		8F049EBF232C1F17009EA222 /* PhotoDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F25BC9E22656FE600BA2438 /* PhotoDataManager.swift */; };
 		8F25BC852265159900BA2438 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F25BC842265159900BA2438 /* AppDelegate.swift */; };
 		8F25BC872265159900BA2438 /* PhotoSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F25BC862265159900BA2438 /* PhotoSearchController.swift */; };
 		8F25BC8A2265159900BA2438 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F25BC882265159900BA2438 /* Main.storyboard */; };
@@ -22,23 +36,74 @@
 		8F25BCA82266596500BA2438 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F25BCA72266596500BA2438 /* Reachability.swift */; };
 		8F25BCAA2266670900BA2438 /* NetworkAvailability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F25BCA92266670900BA2438 /* NetworkAvailability.swift */; };
 		8F25BCAC22666E4000BA2438 /* UIViewUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F25BCAB22666E4000BA2438 /* UIViewUtilities.swift */; };
+		8F3E507C232C3085001AEDE6 /* TestVectorsUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3E507B232C3085001AEDE6 /* TestVectorsUtilities.swift */; };
+		8F3E5081232C34DB001AEDE6 /* Apples-P1.json in Resources */ = {isa = PBXBuildFile; fileRef = 8F3E5080232C34DB001AEDE6 /* Apples-P1.json */; };
+		8F3E5082232DB989001AEDE6 /* UTMockedObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F049EB2232BF1B6009EA222 /* UTMockedObjects.swift */; };
+		8F3E5083232E0425001AEDE6 /* TestVectorsUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3E507B232C3085001AEDE6 /* TestVectorsUtilities.swift */; };
+		8F3E508F232E07B1001AEDE6 /* Dogs-I5.json in Resources */ = {isa = PBXBuildFile; fileRef = 8F3E5084232E07B1001AEDE6 /* Dogs-I5.json */; };
+		8F3E5090232E07B1001AEDE6 /* Dogs-P1.json in Resources */ = {isa = PBXBuildFile; fileRef = 8F3E5085232E07B1001AEDE6 /* Dogs-P1.json */; };
+		8F3E5091232E07B1001AEDE6 /* Dogs-I2.json in Resources */ = {isa = PBXBuildFile; fileRef = 8F3E5086232E07B1001AEDE6 /* Dogs-I2.json */; };
+		8F3E5092232E07B1001AEDE6 /* Dogs-P2.json in Resources */ = {isa = PBXBuildFile; fileRef = 8F3E5087232E07B1001AEDE6 /* Dogs-P2.json */; };
+		8F3E5093232E07B1001AEDE6 /* Dogs-P4.json in Resources */ = {isa = PBXBuildFile; fileRef = 8F3E5088232E07B1001AEDE6 /* Dogs-P4.json */; };
+		8F3E5094232E07B1001AEDE6 /* Dogs-P3.json in Resources */ = {isa = PBXBuildFile; fileRef = 8F3E5089232E07B1001AEDE6 /* Dogs-P3.json */; };
+		8F3E5095232E07B1001AEDE6 /* Dogs-P5.json in Resources */ = {isa = PBXBuildFile; fileRef = 8F3E508A232E07B1001AEDE6 /* Dogs-P5.json */; };
+		8F3E5096232E07B1001AEDE6 /* Dogs-I1.json in Resources */ = {isa = PBXBuildFile; fileRef = 8F3E508B232E07B1001AEDE6 /* Dogs-I1.json */; };
+		8F3E5097232E07B1001AEDE6 /* Dogs-I4.json in Resources */ = {isa = PBXBuildFile; fileRef = 8F3E508C232E07B1001AEDE6 /* Dogs-I4.json */; };
+		8F3E5098232E07B1001AEDE6 /* FailedSearch.json in Resources */ = {isa = PBXBuildFile; fileRef = 8F3E508D232E07B1001AEDE6 /* FailedSearch.json */; };
+		8F3E5099232E07B1001AEDE6 /* Dogs-I3.json in Resources */ = {isa = PBXBuildFile; fileRef = 8F3E508E232E07B1001AEDE6 /* Dogs-I3.json */; };
+		8F3E509A232E07D4001AEDE6 /* Dogs-I1.json in Resources */ = {isa = PBXBuildFile; fileRef = 8F3E508B232E07B1001AEDE6 /* Dogs-I1.json */; };
+		8F3E509B232E07D4001AEDE6 /* Dogs-I2.json in Resources */ = {isa = PBXBuildFile; fileRef = 8F3E5086232E07B1001AEDE6 /* Dogs-I2.json */; };
+		8F3E509C232E07D4001AEDE6 /* Dogs-I3.json in Resources */ = {isa = PBXBuildFile; fileRef = 8F3E508E232E07B1001AEDE6 /* Dogs-I3.json */; };
+		8F3E509D232E07D4001AEDE6 /* Dogs-I4.json in Resources */ = {isa = PBXBuildFile; fileRef = 8F3E508C232E07B1001AEDE6 /* Dogs-I4.json */; };
+		8F3E509E232E07D4001AEDE6 /* Dogs-I5.json in Resources */ = {isa = PBXBuildFile; fileRef = 8F3E5084232E07B1001AEDE6 /* Dogs-I5.json */; };
+		8F3E509F232E07D4001AEDE6 /* Dogs-P1.json in Resources */ = {isa = PBXBuildFile; fileRef = 8F3E5085232E07B1001AEDE6 /* Dogs-P1.json */; };
+		8F3E50A0232E07D4001AEDE6 /* Dogs-P2.json in Resources */ = {isa = PBXBuildFile; fileRef = 8F3E5087232E07B1001AEDE6 /* Dogs-P2.json */; };
+		8F3E50A1232E07D4001AEDE6 /* Dogs-P3.json in Resources */ = {isa = PBXBuildFile; fileRef = 8F3E5089232E07B1001AEDE6 /* Dogs-P3.json */; };
+		8F3E50A2232E07D4001AEDE6 /* Dogs-P4.json in Resources */ = {isa = PBXBuildFile; fileRef = 8F3E5088232E07B1001AEDE6 /* Dogs-P4.json */; };
+		8F3E50A3232E07D4001AEDE6 /* Dogs-P5.json in Resources */ = {isa = PBXBuildFile; fileRef = 8F3E508A232E07B1001AEDE6 /* Dogs-P5.json */; };
+		8F3E50A4232E07D4001AEDE6 /* FailedSearch.json in Resources */ = {isa = PBXBuildFile; fileRef = 8F3E508D232E07B1001AEDE6 /* FailedSearch.json */; };
+		8F3E50A5232E07D4001AEDE6 /* Apples-P1.json in Resources */ = {isa = PBXBuildFile; fileRef = 8F3E5080232C34DB001AEDE6 /* Apples-P1.json */; };
 		8F70A59B22B0D45200FB6612 /* FavoriteListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F70A59A22B0D45200FB6612 /* FavoriteListController.swift */; };
+		8FC8C189232E284400A4AC68 /* Cats-I2.json in Resources */ = {isa = PBXBuildFile; fileRef = 8FC8C17F232E284300A4AC68 /* Cats-I2.json */; };
+		8FC8C18A232E284400A4AC68 /* Cats-P2.json in Resources */ = {isa = PBXBuildFile; fileRef = 8FC8C180232E284300A4AC68 /* Cats-P2.json */; };
+		8FC8C18B232E284400A4AC68 /* Cats-P1.json in Resources */ = {isa = PBXBuildFile; fileRef = 8FC8C181232E284300A4AC68 /* Cats-P1.json */; };
+		8FC8C18C232E284400A4AC68 /* Cats-I4.json in Resources */ = {isa = PBXBuildFile; fileRef = 8FC8C182232E284300A4AC68 /* Cats-I4.json */; };
+		8FC8C18D232E284400A4AC68 /* Cats-I1.json in Resources */ = {isa = PBXBuildFile; fileRef = 8FC8C183232E284400A4AC68 /* Cats-I1.json */; };
+		8FC8C18E232E284400A4AC68 /* Cats-P4.json in Resources */ = {isa = PBXBuildFile; fileRef = 8FC8C184232E284400A4AC68 /* Cats-P4.json */; };
+		8FC8C18F232E284400A4AC68 /* Cats-P3.json in Resources */ = {isa = PBXBuildFile; fileRef = 8FC8C185232E284400A4AC68 /* Cats-P3.json */; };
+		8FC8C190232E284400A4AC68 /* Cats-I3.json in Resources */ = {isa = PBXBuildFile; fileRef = 8FC8C186232E284400A4AC68 /* Cats-I3.json */; };
+		8FC8C191232E284400A4AC68 /* Cats-P5.json in Resources */ = {isa = PBXBuildFile; fileRef = 8FC8C187232E284400A4AC68 /* Cats-P5.json */; };
+		8FC8C192232E284400A4AC68 /* Cats-I5.json in Resources */ = {isa = PBXBuildFile; fileRef = 8FC8C188232E284400A4AC68 /* Cats-I5.json */; };
+		8FC8C193232E286800A4AC68 /* Cats-I1.json in Resources */ = {isa = PBXBuildFile; fileRef = 8FC8C183232E284400A4AC68 /* Cats-I1.json */; };
+		8FC8C194232E286800A4AC68 /* Cats-I2.json in Resources */ = {isa = PBXBuildFile; fileRef = 8FC8C17F232E284300A4AC68 /* Cats-I2.json */; };
+		8FC8C195232E286800A4AC68 /* Cats-I3.json in Resources */ = {isa = PBXBuildFile; fileRef = 8FC8C186232E284400A4AC68 /* Cats-I3.json */; };
+		8FC8C196232E286800A4AC68 /* Cats-I4.json in Resources */ = {isa = PBXBuildFile; fileRef = 8FC8C182232E284300A4AC68 /* Cats-I4.json */; };
+		8FC8C197232E286800A4AC68 /* Cats-I5.json in Resources */ = {isa = PBXBuildFile; fileRef = 8FC8C188232E284400A4AC68 /* Cats-I5.json */; };
+		8FC8C198232E286800A4AC68 /* Cats-P1.json in Resources */ = {isa = PBXBuildFile; fileRef = 8FC8C181232E284300A4AC68 /* Cats-P1.json */; };
+		8FC8C199232E286800A4AC68 /* Cats-P2.json in Resources */ = {isa = PBXBuildFile; fileRef = 8FC8C180232E284300A4AC68 /* Cats-P2.json */; };
+		8FC8C19A232E286800A4AC68 /* Cats-P3.json in Resources */ = {isa = PBXBuildFile; fileRef = 8FC8C185232E284400A4AC68 /* Cats-P3.json */; };
+		8FC8C19B232E286800A4AC68 /* Cats-P4.json in Resources */ = {isa = PBXBuildFile; fileRef = 8FC8C184232E284400A4AC68 /* Cats-P4.json */; };
+		8FC8C19C232E286800A4AC68 /* Cats-P5.json in Resources */ = {isa = PBXBuildFile; fileRef = 8FC8C187232E284400A4AC68 /* Cats-P5.json */; };
 		8FE79F8222695CDE006468A9 /* EndpointRequestor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE79F8122695CDE006468A9 /* EndpointRequestor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		8F25BCB622669DD200BA2438 /* PBXContainerItemProxy */ = {
+		8F049EAB232B61B9009EA222 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 8F25BC792265159900BA2438 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 8F25BC802265159900BA2438;
-			remoteInfo = TubiCodingChallenge;
+			remoteInfo = PhotoBrowser;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		8F014FF422BCDEDA00B509CB /* EndpointDescriptorBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointDescriptorBase.swift; sourceTree = "<group>"; };
 		8F014FF622BCE11100B509CB /* FlickrEndpointDescriptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrEndpointDescriptor.swift; sourceTree = "<group>"; };
+		8F049EA6232B61B9009EA222 /* PhotoBrowserUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoBrowserUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F049EA8232B61B9009EA222 /* PhotoBrowserUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoBrowserUnitTests.swift; sourceTree = "<group>"; };
+		8F049EAA232B61B9009EA222 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F049EB2232BF1B6009EA222 /* UTMockedObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UTMockedObjects.swift; sourceTree = "<group>"; };
 		8F25BC812265159900BA2438 /* PhotoBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F25BC842265159900BA2438 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8F25BC862265159900BA2438 /* PhotoSearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSearchController.swift; sourceTree = "<group>"; };
@@ -54,20 +119,42 @@
 		8F25BCA72266596500BA2438 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		8F25BCA92266670900BA2438 /* NetworkAvailability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkAvailability.swift; sourceTree = "<group>"; };
 		8F25BCAB22666E4000BA2438 /* UIViewUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewUtilities.swift; sourceTree = "<group>"; };
-		8F25BCB122669DD200BA2438 /* PhotoBrowserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoBrowserTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F3E507B232C3085001AEDE6 /* TestVectorsUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestVectorsUtilities.swift; sourceTree = "<group>"; };
+		8F3E5080232C34DB001AEDE6 /* Apples-P1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "Apples-P1.json"; path = "/Users/mcertain/GitHub/PhotoBrowser/PhotoBrowserUnitTests/Vectors/Apples-P1.json"; sourceTree = "<absolute>"; };
+		8F3E5084232E07B1001AEDE6 /* Dogs-I5.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Dogs-I5.json"; sourceTree = "<group>"; };
+		8F3E5085232E07B1001AEDE6 /* Dogs-P1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Dogs-P1.json"; sourceTree = "<group>"; };
+		8F3E5086232E07B1001AEDE6 /* Dogs-I2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Dogs-I2.json"; sourceTree = "<group>"; };
+		8F3E5087232E07B1001AEDE6 /* Dogs-P2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Dogs-P2.json"; sourceTree = "<group>"; };
+		8F3E5088232E07B1001AEDE6 /* Dogs-P4.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Dogs-P4.json"; sourceTree = "<group>"; };
+		8F3E5089232E07B1001AEDE6 /* Dogs-P3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Dogs-P3.json"; sourceTree = "<group>"; };
+		8F3E508A232E07B1001AEDE6 /* Dogs-P5.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Dogs-P5.json"; sourceTree = "<group>"; };
+		8F3E508B232E07B1001AEDE6 /* Dogs-I1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Dogs-I1.json"; sourceTree = "<group>"; };
+		8F3E508C232E07B1001AEDE6 /* Dogs-I4.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Dogs-I4.json"; sourceTree = "<group>"; };
+		8F3E508D232E07B1001AEDE6 /* FailedSearch.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = FailedSearch.json; sourceTree = "<group>"; };
+		8F3E508E232E07B1001AEDE6 /* Dogs-I3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Dogs-I3.json"; sourceTree = "<group>"; };
 		8F70A59A22B0D45200FB6612 /* FavoriteListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteListController.swift; sourceTree = "<group>"; };
+		8FC8C17F232E284300A4AC68 /* Cats-I2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Cats-I2.json"; sourceTree = "<group>"; };
+		8FC8C180232E284300A4AC68 /* Cats-P2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Cats-P2.json"; sourceTree = "<group>"; };
+		8FC8C181232E284300A4AC68 /* Cats-P1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Cats-P1.json"; sourceTree = "<group>"; };
+		8FC8C182232E284300A4AC68 /* Cats-I4.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Cats-I4.json"; sourceTree = "<group>"; };
+		8FC8C183232E284400A4AC68 /* Cats-I1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Cats-I1.json"; sourceTree = "<group>"; };
+		8FC8C184232E284400A4AC68 /* Cats-P4.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Cats-P4.json"; sourceTree = "<group>"; };
+		8FC8C185232E284400A4AC68 /* Cats-P3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Cats-P3.json"; sourceTree = "<group>"; };
+		8FC8C186232E284400A4AC68 /* Cats-I3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Cats-I3.json"; sourceTree = "<group>"; };
+		8FC8C187232E284400A4AC68 /* Cats-P5.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Cats-P5.json"; sourceTree = "<group>"; };
+		8FC8C188232E284400A4AC68 /* Cats-I5.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Cats-I5.json"; sourceTree = "<group>"; };
 		8FE79F8122695CDE006468A9 /* EndpointRequestor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointRequestor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		8F25BC7E2265159900BA2438 /* Frameworks */ = {
+		8F049EA3232B61B9009EA222 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8F25BCAE22669DD200BA2438 /* Frameworks */ = {
+		8F25BC7E2265159900BA2438 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -77,10 +164,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8F049EA7232B61B9009EA222 /* PhotoBrowserUnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				8F3E507D232C3393001AEDE6 /* Vectors */,
+				8F3E507B232C3085001AEDE6 /* TestVectorsUtilities.swift */,
+				8F049EB2232BF1B6009EA222 /* UTMockedObjects.swift */,
+				8F049EA8232B61B9009EA222 /* PhotoBrowserUnitTests.swift */,
+				8F049EAA232B61B9009EA222 /* Info.plist */,
+			);
+			path = PhotoBrowserUnitTests;
+			sourceTree = "<group>";
+		};
 		8F25BC782265159900BA2438 = {
 			isa = PBXGroup;
 			children = (
 				8F25BC832265159900BA2438 /* PhotoBrowser */,
+				8F049EA7232B61B9009EA222 /* PhotoBrowserUnitTests */,
 				8F25BC822265159900BA2438 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -89,7 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				8F25BC812265159900BA2438 /* PhotoBrowser.app */,
-				8F25BCB122669DD200BA2438 /* PhotoBrowserTests.xctest */,
+				8F049EA6232B61B9009EA222 /* PhotoBrowserUnitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -151,9 +251,56 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
+		8F3E507D232C3393001AEDE6 /* Vectors */ = {
+			isa = PBXGroup;
+			children = (
+				8FC8C183232E284400A4AC68 /* Cats-I1.json */,
+				8FC8C17F232E284300A4AC68 /* Cats-I2.json */,
+				8FC8C186232E284400A4AC68 /* Cats-I3.json */,
+				8FC8C182232E284300A4AC68 /* Cats-I4.json */,
+				8FC8C188232E284400A4AC68 /* Cats-I5.json */,
+				8FC8C181232E284300A4AC68 /* Cats-P1.json */,
+				8FC8C180232E284300A4AC68 /* Cats-P2.json */,
+				8FC8C185232E284400A4AC68 /* Cats-P3.json */,
+				8FC8C184232E284400A4AC68 /* Cats-P4.json */,
+				8FC8C187232E284400A4AC68 /* Cats-P5.json */,
+				8F3E508B232E07B1001AEDE6 /* Dogs-I1.json */,
+				8F3E5086232E07B1001AEDE6 /* Dogs-I2.json */,
+				8F3E508E232E07B1001AEDE6 /* Dogs-I3.json */,
+				8F3E508C232E07B1001AEDE6 /* Dogs-I4.json */,
+				8F3E5084232E07B1001AEDE6 /* Dogs-I5.json */,
+				8F3E5085232E07B1001AEDE6 /* Dogs-P1.json */,
+				8F3E5087232E07B1001AEDE6 /* Dogs-P2.json */,
+				8F3E5089232E07B1001AEDE6 /* Dogs-P3.json */,
+				8F3E5088232E07B1001AEDE6 /* Dogs-P4.json */,
+				8F3E508A232E07B1001AEDE6 /* Dogs-P5.json */,
+				8F3E508D232E07B1001AEDE6 /* FailedSearch.json */,
+				8F3E5080232C34DB001AEDE6 /* Apples-P1.json */,
+			);
+			path = Vectors;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		8F049EA5232B61B9009EA222 /* PhotoBrowserUnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F049EAF232B61B9009EA222 /* Build configuration list for PBXNativeTarget "PhotoBrowserUnitTests" */;
+			buildPhases = (
+				8F049EA2232B61B9009EA222 /* Sources */,
+				8F049EA3232B61B9009EA222 /* Frameworks */,
+				8F049EA4232B61B9009EA222 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8F049EAC232B61B9009EA222 /* PBXTargetDependency */,
+			);
+			name = PhotoBrowserUnitTests;
+			productName = PhotoBrowserUnitTests;
+			productReference = 8F049EA6232B61B9009EA222 /* PhotoBrowserUnitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		8F25BC802265159900BA2438 /* PhotoBrowser */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8F25BC962265159B00BA2438 /* Build configuration list for PBXNativeTarget "PhotoBrowser" */;
@@ -171,40 +318,22 @@
 			productReference = 8F25BC812265159900BA2438 /* PhotoBrowser.app */;
 			productType = "com.apple.product-type.application";
 		};
-		8F25BCB022669DD200BA2438 /* PhotoBrowserTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 8F25BCB822669DD200BA2438 /* Build configuration list for PBXNativeTarget "PhotoBrowserTests" */;
-			buildPhases = (
-				8F25BCAD22669DD200BA2438 /* Sources */,
-				8F25BCAE22669DD200BA2438 /* Frameworks */,
-				8F25BCAF22669DD200BA2438 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				8F25BCB722669DD200BA2438 /* PBXTargetDependency */,
-			);
-			name = PhotoBrowserTests;
-			productName = TubiCodingChallengeTests;
-			productReference = 8F25BCB122669DD200BA2438 /* PhotoBrowserTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		8F25BC792265159900BA2438 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1010;
+				LastSwiftUpdateCheck = 1020;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "M. Certain";
 				TargetAttributes = {
+					8F049EA5232B61B9009EA222 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 8F25BC802265159900BA2438;
+					};
 					8F25BC802265159900BA2438 = {
 						CreatedOnToolsVersion = 10.1;
-					};
-					8F25BCB022669DD200BA2438 = {
-						CreatedOnToolsVersion = 10.1;
-						TestTargetID = 8F25BC802265159900BA2438;
 					};
 				};
 			};
@@ -222,37 +351,105 @@
 			projectRoot = "";
 			targets = (
 				8F25BC802265159900BA2438 /* PhotoBrowser */,
-				8F25BCB022669DD200BA2438 /* PhotoBrowserTests */,
+				8F049EA5232B61B9009EA222 /* PhotoBrowserUnitTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		8F049EA4232B61B9009EA222 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FC8C18E232E284400A4AC68 /* Cats-P4.json in Resources */,
+				8F3E5095232E07B1001AEDE6 /* Dogs-P5.json in Resources */,
+				8F3E5092232E07B1001AEDE6 /* Dogs-P2.json in Resources */,
+				8F3E5094232E07B1001AEDE6 /* Dogs-P3.json in Resources */,
+				8F3E508F232E07B1001AEDE6 /* Dogs-I5.json in Resources */,
+				8FC8C18C232E284400A4AC68 /* Cats-I4.json in Resources */,
+				8F3E5096232E07B1001AEDE6 /* Dogs-I1.json in Resources */,
+				8F049EBD232C1F0C009EA222 /* PhotoListCell.xib in Resources */,
+				8F3E5081232C34DB001AEDE6 /* Apples-P1.json in Resources */,
+				8F3E5097232E07B1001AEDE6 /* Dogs-I4.json in Resources */,
+				8FC8C190232E284400A4AC68 /* Cats-I3.json in Resources */,
+				8F3E5098232E07B1001AEDE6 /* FailedSearch.json in Resources */,
+				8FC8C189232E284400A4AC68 /* Cats-I2.json in Resources */,
+				8FC8C18A232E284400A4AC68 /* Cats-P2.json in Resources */,
+				8F3E5090232E07B1001AEDE6 /* Dogs-P1.json in Resources */,
+				8F3E5091232E07B1001AEDE6 /* Dogs-I2.json in Resources */,
+				8FC8C192232E284400A4AC68 /* Cats-I5.json in Resources */,
+				8FC8C18F232E284400A4AC68 /* Cats-P3.json in Resources */,
+				8FC8C18B232E284400A4AC68 /* Cats-P1.json in Resources */,
+				8F3E5099232E07B1001AEDE6 /* Dogs-I3.json in Resources */,
+				8FC8C18D232E284400A4AC68 /* Cats-I1.json in Resources */,
+				8F3E5093232E07B1001AEDE6 /* Dogs-P4.json in Resources */,
+				8FC8C191232E284400A4AC68 /* Cats-P5.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8F25BC7F2265159900BA2438 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FC8C195232E286800A4AC68 /* Cats-I3.json in Resources */,
+				8FC8C19C232E286800A4AC68 /* Cats-P5.json in Resources */,
+				8F3E509E232E07D4001AEDE6 /* Dogs-I5.json in Resources */,
 				8F25BC922265159B00BA2438 /* LaunchScreen.storyboard in Resources */,
 				8F25BC8F2265159B00BA2438 /* Assets.xcassets in Resources */,
 				8F25BCA322659C7800BA2438 /* PhotoListCell.xib in Resources */,
+				8FC8C196232E286800A4AC68 /* Cats-I4.json in Resources */,
+				8FC8C193232E286800A4AC68 /* Cats-I1.json in Resources */,
+				8FC8C19A232E286800A4AC68 /* Cats-P3.json in Resources */,
+				8FC8C199232E286800A4AC68 /* Cats-P2.json in Resources */,
+				8F3E50A0232E07D4001AEDE6 /* Dogs-P2.json in Resources */,
+				8F3E509D232E07D4001AEDE6 /* Dogs-I4.json in Resources */,
+				8FC8C194232E286800A4AC68 /* Cats-I2.json in Resources */,
+				8F3E50A2232E07D4001AEDE6 /* Dogs-P4.json in Resources */,
+				8F3E50A3232E07D4001AEDE6 /* Dogs-P5.json in Resources */,
+				8F3E509B232E07D4001AEDE6 /* Dogs-I2.json in Resources */,
+				8FC8C19B232E286800A4AC68 /* Cats-P4.json in Resources */,
+				8FC8C198232E286800A4AC68 /* Cats-P1.json in Resources */,
 				8F25BC8A2265159900BA2438 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8F25BCAF22669DD200BA2438 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				8F3E509C232E07D4001AEDE6 /* Dogs-I3.json in Resources */,
+				8F3E50A5232E07D4001AEDE6 /* Apples-P1.json in Resources */,
+				8F3E50A4232E07D4001AEDE6 /* FailedSearch.json in Resources */,
+				8F3E50A1232E07D4001AEDE6 /* Dogs-P3.json in Resources */,
+				8F3E509A232E07D4001AEDE6 /* Dogs-I1.json in Resources */,
+				8FC8C197232E286800A4AC68 /* Cats-I5.json in Resources */,
+				8F3E509F232E07D4001AEDE6 /* Dogs-P1.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		8F049EA2232B61B9009EA222 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F049EBE232C1F13009EA222 /* FlickrEndpointDescriptor.swift in Sources */,
+				8F049EB8232C1EED009EA222 /* UIViewUtilities.swift in Sources */,
+				8F049EBF232C1F17009EA222 /* PhotoDataManager.swift in Sources */,
+				8F049EBA232C1EF4009EA222 /* FavoriteListController.swift in Sources */,
+				8F049EB3232BF1B6009EA222 /* UTMockedObjects.swift in Sources */,
+				8F049EA9232B61B9009EA222 /* PhotoBrowserUnitTests.swift in Sources */,
+				8F049EB9232C1EF1009EA222 /* PhotoDetailsController.swift in Sources */,
+				8F049EB5232C1EE2009EA222 /* EndpointDescriptorBase.swift in Sources */,
+				8F049EB6232C1EE6009EA222 /* Reachability.swift in Sources */,
+				8F049EB4232C1ED4009EA222 /* EndpointRequestor.swift in Sources */,
+				8F049EBB232C1EF7009EA222 /* PhotoSearchController.swift in Sources */,
+				8F049EB7232C1EEA009EA222 /* NetworkAvailability.swift in Sources */,
+				8F3E507C232C3085001AEDE6 /* TestVectorsUtilities.swift in Sources */,
+				8F049EBC232C1EFC009EA222 /* PhotoListCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8F25BC7D2265159900BA2438 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F3E5083232E0425001AEDE6 /* TestVectorsUtilities.swift in Sources */,
+				8F3E5082232DB989001AEDE6 /* UTMockedObjects.swift in Sources */,
 				8F25BC9F22656FE600BA2438 /* PhotoDataManager.swift in Sources */,
 				8F25BCA222659C7800BA2438 /* PhotoListCell.swift in Sources */,
 				8F70A59B22B0D45200FB6612 /* FavoriteListController.swift in Sources */,
@@ -269,20 +466,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8F25BCAD22669DD200BA2438 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		8F25BCB722669DD200BA2438 /* PBXTargetDependency */ = {
+		8F049EAC232B61B9009EA222 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 8F25BC802265159900BA2438 /* PhotoBrowser */;
-			targetProxy = 8F25BCB622669DD200BA2438 /* PBXContainerItemProxy */;
+			targetProxy = 8F049EAB232B61B9009EA222 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -306,6 +496,48 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		8F049EAD232B61B9009EA222 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QES95469SW;
+				INFOPLIST_FILE = PhotoBrowserUnitTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mcertain.PhotoBrowserUnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PhotoBrowser.app/PhotoBrowser";
+			};
+			name = Debug;
+		};
+		8F049EAE232B61B9009EA222 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QES95469SW;
+				INFOPLIST_FILE = PhotoBrowserUnitTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mcertain.PhotoBrowserUnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PhotoBrowser.app/PhotoBrowser";
+			};
+			name = Release;
+		};
 		8F25BC942265159B00BA2438 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -460,49 +692,18 @@
 			};
 			name = Release;
 		};
-		8F25BCB922669DD200BA2438 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = QES95469SW;
-				INFOPLIST_FILE = MusicDetailsBrowserTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = mcertain.MusicDetailsBrowserTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PhotoBrowser.app/PhotoBrowser";
-			};
-			name = Debug;
-		};
-		8F25BCBA22669DD200BA2438 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = QES95469SW;
-				INFOPLIST_FILE = MusicDetailsBrowserTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = mcertain.MusicDetailsBrowserTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PhotoBrowser.app/PhotoBrowser";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		8F049EAF232B61B9009EA222 /* Build configuration list for PBXNativeTarget "PhotoBrowserUnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F049EAD232B61B9009EA222 /* Debug */,
+				8F049EAE232B61B9009EA222 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		8F25BC7C2265159900BA2438 /* Build configuration list for PBXProject "PhotoBrowser" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -517,15 +718,6 @@
 			buildConfigurations = (
 				8F25BC972265159B00BA2438 /* Debug */,
 				8F25BC982265159B00BA2438 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		8F25BCB822669DD200BA2438 /* Build configuration list for PBXNativeTarget "PhotoBrowserTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8F25BCB922669DD200BA2438 /* Debug */,
-				8F25BCBA22669DD200BA2438 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
