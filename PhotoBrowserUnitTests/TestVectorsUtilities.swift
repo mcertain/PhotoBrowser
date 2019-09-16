@@ -154,4 +154,93 @@ class TestVectors {
         imageURLs.removeAll()
     }
     
+    // This helpers creates the base root directory for the test vector files
+    static func getFilePathString(filename: String?, withExtension: String?) -> String? {
+        
+        // When local debug is disabled, the vectors come from documents directory, this can be
+        // helpful after a new capture of test vectors from the backend server is performed
+        if(LOCAL_DEBUG == false) {
+            let filenameStr = "Vectors/" + (filename ?? "") + "." + (withExtension ?? "")
+            return FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0].absoluteString + filenameStr
+        }
+            // Otherwise, the vectors are loaded from the app bundle where the TestVectors are located.
+            // This is useful after capturing and permanantly storing Test Vectors for Unit Testing
+        else {
+            return Bundle(for: TestVectors.self).url(forResource: filename, withExtension: withExtension)?.absoluteString
+        }
+    }
+    
+    // Loads the exact same JSON data that could come from a backend server, there is
+    // a separate file each cached page response that would normally come from the server
+    static func loadCachedPage(searchString: String?, pageNumber: Int?) -> Data? {
+        guard let searchStr = searchString else {
+            return nil
+        }
+        guard let pageNum = pageNumber else {
+            return nil
+        }
+        
+        var filenameStr: String? = searchStr + "-P" + String(pageNum)
+        filenameStr = getFilePathString(filename: filenameStr, withExtension: "json")
+        let filenameURL = URL(string: filenameStr ?? "")
+        
+        var cachedPageData: Data?
+        do {
+            guard filenameURL != nil else {
+                throw "File URL Invalid."
+            }
+            cachedPageData = try Data(contentsOf: filenameURL!)
+        } catch {
+            print("Could not load cached page from file.")
+        }
+        
+        return cachedPageData
+    }
+    
+    // Loads a dictionary from a JSON file where the key is the requested URL and the value is
+    // a Data object representing the image being requested. There is a separate JSON file that
+    // aligns to same cache page number where the image reference is sourced.
+    static func loadCachedImage(urlString: String?, searchString: String?, pageNumber: Int?) -> Data? {
+        guard let pageURLStr = urlString else {
+            return nil
+        }
+        guard let searchStr = searchString else {
+            return nil
+        }
+        guard let pageNum = pageNumber else {
+            return nil
+        }
+        
+        var filenameStr: String? = searchStr + "-I" + String(pageNum)
+        filenameStr = getFilePathString(filename: filenameStr, withExtension: "json")
+        let filenameURL = URL(string: filenameStr ?? "")
+        
+        var cachedFileData: Data?
+        do {
+            guard filenameURL != nil else {
+                throw "File URL Invalid"
+            }
+            cachedFileData = try Data(contentsOf: filenameURL!)
+        }
+        catch let decodeError {
+            print("Failed to load cached image data from file: \(decodeError)")
+            return nil
+        }
+        
+        var cachedImages: [String:Data?]?
+        if(cachedFileData != nil) {
+            do {
+                cachedImages = try JSONDecoder().decode([String:Data?].self, from: cachedFileData!)
+            }
+            catch let decodeError {
+                print("Failed to decode favorites list from file: \(decodeError)")
+                return nil
+            }
+        }
+        
+        let imageData = cachedImages![pageURLStr]!
+        
+        return imageData
+    }
+    
 }

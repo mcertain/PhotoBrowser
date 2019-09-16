@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-let LOCAL_DEBUG = true
+let LOCAL_DEBUG = false
 
 typealias EndpointResponseHandler = ((Data?, URLResponse?, Error?) -> Void)
 

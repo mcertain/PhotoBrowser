@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PhotoBrowser/Utilities/EndpointRequestor.swift"
-            timestampString = "590227580.567698"
+            timestampString = "590355902.389538"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "90"
-            endingLineNumber = "90"
+            startingLineNumber = "93"
+            endingLineNumber = "93"
             landmarkName = "requestEndpointData(endpointDescriptor:)"
             landmarkType = "7">
             <Locations>
@@ -88,45 +88,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PhotoBrowser/Utilities/EndpointRequestor.swift"
-            timestampString = "590227580.567764"
+            timestampString = "590355902.389613"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "60"
-            endingLineNumber = "60"
-            landmarkName = "EndpointRequestor"
-            landmarkType = "3">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "static PhotoBrowser.EndpointRequestor.requestEndpointData(endpointDescriptor: PhotoBrowser.EndpointDescriptorBase) -&gt; Swift.Bool"
-                  moduleName = "PhotoBrowser"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mcertain/GitHub/PhotoBrowser/PhotoBrowser/Utilities/EndpointRequestor.swift"
-                  timestampString = "590227254.878013"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "60"
-                  endingLineNumber = "60"
-                  offsetFromSymbolStart = "209">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "static PhotoBrowserUnitTests.EndpointRequestor.requestEndpointData(endpointDescriptor: PhotoBrowserUnitTests.EndpointDescriptorBase) -&gt; Swift.Bool"
-                  moduleName = "PhotoBrowserUnitTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mcertain/GitHub/PhotoBrowser/PhotoBrowser/Utilities/EndpointRequestor.swift"
-                  timestampString = "590227256.0136141"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "60"
-                  endingLineNumber = "60"
-                  offsetFromSymbolStart = "209">
-               </Location>
-            </Locations>
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "requestEndpointData(endpointDescriptor:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -136,45 +104,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PhotoBrowserUnitTests/UTMockedObjects.swift"
-            timestampString = "590224248.224666"
+            timestampString = "590355902.38972"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "47"
-            endingLineNumber = "47"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
             landmarkName = "executeRequest(with:responseHandler:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "function signature specialization &lt;Arg[1] = Value Promoted from Box, Arg[3] = Value Promoted from Box&gt; of closure #1 () -&gt; () in PhotoBrowser.MockedEndpointRequestTask.executeRequest(with: PhotoBrowser.EndpointDescriptorBase, responseHandler: (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "PhotoBrowser"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mcertain/GitHub/PhotoBrowser/PhotoBrowserUnitTests/UTMockedObjects.swift"
-                  timestampString = "590227254.883924"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "47"
-                  endingLineNumber = "47"
-                  offsetFromSymbolStart = "457">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "function signature specialization &lt;Arg[1] = Value Promoted from Box, Arg[3] = Value Promoted from Box&gt; of closure #1 () -&gt; () in PhotoBrowserUnitTests.MockedEndpointRequestTask.executeRequest(with: PhotoBrowserUnitTests.EndpointDescriptorBase, responseHandler: (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "PhotoBrowserUnitTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mcertain/GitHub/PhotoBrowser/PhotoBrowserUnitTests/UTMockedObjects.swift"
-                  timestampString = "590227256.016652"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "47"
-                  endingLineNumber = "47"
-                  offsetFromSymbolStart = "457">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -184,45 +120,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PhotoBrowser/Utilities/EndpointRequestor.swift"
-            timestampString = "590227580.567862"
+            timestampString = "590355902.38977"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "96"
-            endingLineNumber = "96"
+            startingLineNumber = "99"
+            endingLineNumber = "99"
             landmarkName = "requestEndpointData(endpointDescriptor:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "function signature specialization &lt;Arg[7] = Value Promoted from Box&gt; of closure #2 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in static PhotoBrowser.EndpointRequestor.requestEndpointData(endpointDescriptor: PhotoBrowser.EndpointDescriptorBase) -&gt; Swift.Bool"
-                  moduleName = "PhotoBrowser"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mcertain/GitHub/PhotoBrowser/PhotoBrowser/Utilities/EndpointRequestor.swift"
-                  timestampString = "590227254.8889461"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "96"
-                  endingLineNumber = "96"
-                  offsetFromSymbolStart = "864">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "function signature specialization &lt;Arg[7] = Value Promoted from Box&gt; of closure #2 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in static PhotoBrowserUnitTests.EndpointRequestor.requestEndpointData(endpointDescriptor: PhotoBrowserUnitTests.EndpointDescriptorBase) -&gt; Swift.Bool"
-                  moduleName = "PhotoBrowserUnitTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mcertain/GitHub/PhotoBrowser/PhotoBrowser/Utilities/EndpointRequestor.swift"
-                  timestampString = "590227256.019304"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "96"
-                  endingLineNumber = "96"
-                  offsetFromSymbolStart = "864">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -239,38 +143,6 @@
             endingLineNumber = "31"
             landmarkName = "initializeVectorCapture(searchString:cachedPageNumberToFetch:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "static PhotoBrowser.TestVectors.initializeVectorCapture(searchString: Swift.String, cachedPageNumberToFetch: Swift.Int) -&gt; ()"
-                  moduleName = "PhotoBrowser"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mcertain/GitHub/PhotoBrowser/PhotoBrowserUnitTests/TestVectors.swift"
-                  timestampString = "590227254.893617"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "31"
-                  endingLineNumber = "31"
-                  offsetFromSymbolStart = "246">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "static PhotoBrowserUnitTests.TestVectors.initializeVectorCapture(searchString: Swift.String, cachedPageNumberToFetch: Swift.Int) -&gt; ()"
-                  moduleName = "PhotoBrowserUnitTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mcertain/GitHub/PhotoBrowser/PhotoBrowserUnitTests/TestVectors.swift"
-                  timestampString = "590227256.021947"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "31"
-                  endingLineNumber = "31"
-                  offsetFromSymbolStart = "246">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -287,38 +159,6 @@
             endingLineNumber = "56"
             landmarkName = "captureVectorData(receivedData:withArgument:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "static PhotoBrowser.TestVectors.captureVectorData(receivedData: Swift.Optional&lt;Foundation.Data&gt;, withArgument: Swift.Optional&lt;Swift.AnyObject&gt;) -&gt; ()"
-                  moduleName = "PhotoBrowser"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mcertain/GitHub/PhotoBrowser/PhotoBrowserUnitTests/TestVectors.swift"
-                  timestampString = "590227254.898651"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "56"
-                  endingLineNumber = "56"
-                  offsetFromSymbolStart = "608">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "static PhotoBrowserUnitTests.TestVectors.captureVectorData(receivedData: Swift.Optional&lt;Foundation.Data&gt;, withArgument: Swift.Optional&lt;Swift.AnyObject&gt;) -&gt; ()"
-                  moduleName = "PhotoBrowserUnitTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mcertain/GitHub/PhotoBrowser/PhotoBrowserUnitTests/TestVectors.swift"
-                  timestampString = "590227256.02465"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "56"
-                  endingLineNumber = "56"
-                  offsetFromSymbolStart = "608">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -351,38 +191,6 @@
             endingLineNumber = "34"
             landmarkName = "initializeVectorCapture(searchString:cachedPageNumberToFetch:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; () in static PhotoBrowser.TestVectors.initializeVectorCapture(searchString: Swift.String, cachedPageNumberToFetch: Swift.Int) -&gt; ()"
-                  moduleName = "PhotoBrowser"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mcertain/GitHub/PhotoBrowser/PhotoBrowserUnitTests/TestVectors.swift"
-                  timestampString = "590227254.905256"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "34"
-                  endingLineNumber = "34"
-                  offsetFromSymbolStart = "29">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; () in static PhotoBrowserUnitTests.TestVectors.initializeVectorCapture(searchString: Swift.String, cachedPageNumberToFetch: Swift.Int) -&gt; ()"
-                  moduleName = "PhotoBrowserUnitTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mcertain/GitHub/PhotoBrowser/PhotoBrowserUnitTests/TestVectors.swift"
-                  timestampString = "590227256.026914"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "34"
-                  endingLineNumber = "34"
-                  offsetFromSymbolStart = "29">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -399,38 +207,6 @@
             endingLineNumber = "47"
             landmarkName = "initializeVectorCapture(searchString:cachedPageNumberToFetch:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "static PhotoBrowser.TestVectors.initializeVectorCapture(searchString: Swift.String, cachedPageNumberToFetch: Swift.Int) -&gt; ()"
-                  moduleName = "PhotoBrowser"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mcertain/GitHub/PhotoBrowser/PhotoBrowserUnitTests/TestVectors.swift"
-                  timestampString = "590227254.909821"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "47"
-                  endingLineNumber = "47"
-                  offsetFromSymbolStart = "893">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "static PhotoBrowserUnitTests.TestVectors.initializeVectorCapture(searchString: Swift.String, cachedPageNumberToFetch: Swift.Int) -&gt; ()"
-                  moduleName = "PhotoBrowserUnitTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mcertain/GitHub/PhotoBrowser/PhotoBrowserUnitTests/TestVectors.swift"
-                  timestampString = "590227256.029236"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "47"
-                  endingLineNumber = "47"
-                  offsetFromSymbolStart = "893">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -447,38 +223,6 @@
             endingLineNumber = "100"
             landmarkName = "captureVectorImages(withArgument:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;Swift.AnyObject&gt;) -&gt; () in static PhotoBrowser.TestVectors.captureVectorImages(withArgument: Swift.Optional&lt;Swift.AnyObject&gt;) -&gt; ()"
-                  moduleName = "PhotoBrowser"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mcertain/GitHub/PhotoBrowser/PhotoBrowserUnitTests/TestVectors.swift"
-                  timestampString = "590227254.915118"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "100"
-                  endingLineNumber = "100"
-                  offsetFromSymbolStart = "932">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;Swift.AnyObject&gt;) -&gt; () in static PhotoBrowserUnitTests.TestVectors.captureVectorImages(withArgument: Swift.Optional&lt;Swift.AnyObject&gt;) -&gt; ()"
-                  moduleName = "PhotoBrowserUnitTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mcertain/GitHub/PhotoBrowser/PhotoBrowserUnitTests/TestVectors.swift"
-                  timestampString = "590227256.031644"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "100"
-                  endingLineNumber = "100"
-                  offsetFromSymbolStart = "932">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -495,38 +239,6 @@
             endingLineNumber = "110"
             landmarkName = "captureVectorImages(withArgument:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;Swift.AnyObject&gt;) -&gt; () in static PhotoBrowser.TestVectors.captureVectorImages(withArgument: Swift.Optional&lt;Swift.AnyObject&gt;) -&gt; ()"
-                  moduleName = "PhotoBrowser"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mcertain/GitHub/PhotoBrowser/PhotoBrowserUnitTests/TestVectors.swift"
-                  timestampString = "590227254.9199049"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "110"
-                  endingLineNumber = "110"
-                  offsetFromSymbolStart = "1751">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;Swift.AnyObject&gt;) -&gt; () in static PhotoBrowserUnitTests.TestVectors.captureVectorImages(withArgument: Swift.Optional&lt;Swift.AnyObject&gt;) -&gt; ()"
-                  moduleName = "PhotoBrowserUnitTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mcertain/GitHub/PhotoBrowser/PhotoBrowserUnitTests/TestVectors.swift"
-                  timestampString = "590227256.0339251"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "110"
-                  endingLineNumber = "110"
-                  offsetFromSymbolStart = "1751">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -543,38 +255,6 @@
             endingLineNumber = "144"
             landmarkName = "captureVectorImages(withArgument:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "static PhotoBrowser.TestVectors.captureVectorImages(withArgument: Swift.Optional&lt;Swift.AnyObject&gt;) -&gt; ()"
-                  moduleName = "PhotoBrowser"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mcertain/GitHub/PhotoBrowser/PhotoBrowserUnitTests/TestVectors.swift"
-                  timestampString = "590227254.925751"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "144"
-                  endingLineNumber = "144"
-                  offsetFromSymbolStart = "1943">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "static PhotoBrowserUnitTests.TestVectors.captureVectorImages(withArgument: Swift.Optional&lt;Swift.AnyObject&gt;) -&gt; ()"
-                  moduleName = "PhotoBrowserUnitTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mcertain/GitHub/PhotoBrowser/PhotoBrowserUnitTests/TestVectors.swift"
-                  timestampString = "590227256.037523"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "144"
-                  endingLineNumber = "144"
-                  offsetFromSymbolStart = "1943">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -607,38 +287,6 @@
             endingLineNumber = "89"
             landmarkName = "captureVectorData(receivedData:withArgument:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "static PhotoBrowser.TestVectors.captureVectorData(receivedData: Swift.Optional&lt;Foundation.Data&gt;, withArgument: Swift.Optional&lt;Swift.AnyObject&gt;) -&gt; ()"
-                  moduleName = "PhotoBrowser"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mcertain/GitHub/PhotoBrowser/PhotoBrowserUnitTests/TestVectors.swift"
-                  timestampString = "590227254.930645"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "89"
-                  endingLineNumber = "89"
-                  offsetFromSymbolStart = "6970">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "static PhotoBrowserUnitTests.TestVectors.captureVectorData(receivedData: Swift.Optional&lt;Foundation.Data&gt;, withArgument: Swift.Optional&lt;Swift.AnyObject&gt;) -&gt; ()"
-                  moduleName = "PhotoBrowserUnitTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mcertain/GitHub/PhotoBrowser/PhotoBrowserUnitTests/TestVectors.swift"
-                  timestampString = "590227256.039682"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "89"
-                  endingLineNumber = "89"
-                  offsetFromSymbolStart = "6970">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -655,38 +303,6 @@
             endingLineNumber = "93"
             landmarkName = "captureVectorImages(withArgument:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "static PhotoBrowser.TestVectors.captureVectorImages(withArgument: Swift.Optional&lt;Swift.AnyObject&gt;) -&gt; ()"
-                  moduleName = "PhotoBrowser"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mcertain/GitHub/PhotoBrowser/PhotoBrowserUnitTests/TestVectors.swift"
-                  timestampString = "590227254.93644"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "93"
-                  endingLineNumber = "93"
-                  offsetFromSymbolStart = "333">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "static PhotoBrowserUnitTests.TestVectors.captureVectorImages(withArgument: Swift.Optional&lt;Swift.AnyObject&gt;) -&gt; ()"
-                  moduleName = "PhotoBrowserUnitTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mcertain/GitHub/PhotoBrowser/PhotoBrowserUnitTests/TestVectors.swift"
-                  timestampString = "590227256.041633"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "93"
-                  endingLineNumber = "93"
-                  offsetFromSymbolStart = "333">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -703,68 +319,6 @@
             endingLineNumber = "83"
             landmarkName = "captureVectorData(receivedData:withArgument:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "static PhotoBrowser.TestVectors.captureVectorData(receivedData: Swift.Optional&lt;Foundation.Data&gt;, withArgument: Swift.Optional&lt;Swift.AnyObject&gt;) -&gt; ()"
-                  moduleName = "PhotoBrowser"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mcertain/GitHub/PhotoBrowser/PhotoBrowserUnitTests/TestVectors.swift"
-                  timestampString = "590227254.943193"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "83"
-                  endingLineNumber = "83"
-                  offsetFromSymbolStart = "5892">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "static PhotoBrowser.TestVectors.captureVectorData(receivedData: Swift.Optional&lt;Foundation.Data&gt;, withArgument: Swift.Optional&lt;Swift.AnyObject&gt;) -&gt; ()"
-                  moduleName = "PhotoBrowser"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mcertain/GitHub/PhotoBrowser/PhotoBrowserUnitTests/TestVectors.swift"
-                  timestampString = "590227254.945949"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "83"
-                  endingLineNumber = "83"
-                  offsetFromSymbolStart = "8531">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "static PhotoBrowserUnitTests.TestVectors.captureVectorData(receivedData: Swift.Optional&lt;Foundation.Data&gt;, withArgument: Swift.Optional&lt;Swift.AnyObject&gt;) -&gt; ()"
-                  moduleName = "PhotoBrowserUnitTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mcertain/GitHub/PhotoBrowser/PhotoBrowserUnitTests/TestVectors.swift"
-                  timestampString = "590227256.0435801"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "83"
-                  endingLineNumber = "83"
-                  offsetFromSymbolStart = "5892">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "static PhotoBrowserUnitTests.TestVectors.captureVectorData(receivedData: Swift.Optional&lt;Foundation.Data&gt;, withArgument: Swift.Optional&lt;Swift.AnyObject&gt;) -&gt; ()"
-                  moduleName = "PhotoBrowserUnitTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mcertain/GitHub/PhotoBrowser/PhotoBrowserUnitTests/TestVectors.swift"
-                  timestampString = "590227256.044983"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "83"
-                  endingLineNumber = "83"
-                  offsetFromSymbolStart = "8531">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -781,38 +335,6 @@
             endingLineNumber = "110"
             landmarkName = "captureVectorImages(withArgument:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;Swift.AnyObject&gt;) -&gt; () in static PhotoBrowser.TestVectors.captureVectorImages(withArgument: Swift.Optional&lt;Swift.AnyObject&gt;) -&gt; ()"
-                  moduleName = "PhotoBrowser"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mcertain/GitHub/PhotoBrowser/PhotoBrowserUnitTests/TestVectors.swift"
-                  timestampString = "590227254.953094"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "110"
-                  endingLineNumber = "110"
-                  offsetFromSymbolStart = "1751">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;Swift.AnyObject&gt;) -&gt; () in static PhotoBrowserUnitTests.TestVectors.captureVectorImages(withArgument: Swift.Optional&lt;Swift.AnyObject&gt;) -&gt; ()"
-                  moduleName = "PhotoBrowserUnitTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mcertain/GitHub/PhotoBrowser/PhotoBrowserUnitTests/TestVectors.swift"
-                  timestampString = "590227256.047027"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "110"
-                  endingLineNumber = "110"
-                  offsetFromSymbolStart = "1751">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -916,45 +438,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PhotoBrowser/Controllers/PhotoSearchController.swift"
-            timestampString = "590224248.230092"
+            timestampString = "590349213.1881239"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "70"
             endingLineNumber = "70"
             landmarkName = "fetchPhotoData(atPage:withIndexPaths:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;Swift.AnyObject&gt;) -&gt; () in PhotoBrowser.PhotoSearchController.fetchPhotoData(atPage: Swift.Int, withIndexPaths: Swift.Optional&lt;Swift.Array&lt;Foundation.IndexPath&gt;&gt;) -&gt; ()"
-                  moduleName = "PhotoBrowser"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mcertain/GitHub/PhotoBrowser/PhotoBrowser/Controllers/PhotoSearchController.swift"
-                  timestampString = "590227254.961475"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "70"
-                  endingLineNumber = "70"
-                  offsetFromSymbolStart = "373">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;Swift.AnyObject&gt;) -&gt; () in PhotoBrowserUnitTests.PhotoSearchController.fetchPhotoData(atPage: Swift.Int, withIndexPaths: Swift.Optional&lt;Swift.Array&lt;Foundation.IndexPath&gt;&gt;) -&gt; ()"
-                  moduleName = "PhotoBrowserUnitTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mcertain/GitHub/PhotoBrowser/PhotoBrowser/Controllers/PhotoSearchController.swift"
-                  timestampString = "590227256.049547"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "70"
-                  endingLineNumber = "70"
-                  offsetFromSymbolStart = "373">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -964,7 +454,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PhotoBrowser/Controllers/PhotoSearchController.swift"
-            timestampString = "590224248.230369"
+            timestampString = "590349213.188169"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "133"
@@ -1011,108 +501,12 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "PhotoBrowserUnitTests/UTMockedObjects.swift"
-            timestampString = "590224248.230436"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "87"
-            endingLineNumber = "87"
-            landmarkName = "MockedEndpointRequestTask"
-            landmarkType = "3">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "PhotoBrowser.MockedEndpointRequestTask.loadCachedImage(urlString: Swift.Optional&lt;Swift.String&gt;, searchString: Swift.Optional&lt;Swift.String&gt;, pageNumber: Swift.Optional&lt;Swift.Int&gt;) -&gt; Swift.Optional&lt;Foundation.Data&gt;"
-                  moduleName = "PhotoBrowser"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mcertain/GitHub/PhotoBrowser/PhotoBrowserUnitTests/UTMockedObjects.swift"
-                  timestampString = "590227254.966673"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "87"
-                  endingLineNumber = "87"
-                  offsetFromSymbolStart = "864">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "PhotoBrowserUnitTests.MockedEndpointRequestTask.loadCachedImage(urlString: Swift.Optional&lt;Swift.String&gt;, searchString: Swift.Optional&lt;Swift.String&gt;, pageNumber: Swift.Optional&lt;Swift.Int&gt;) -&gt; Swift.Optional&lt;Foundation.Data&gt;"
-                  moduleName = "PhotoBrowserUnitTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mcertain/GitHub/PhotoBrowser/PhotoBrowserUnitTests/UTMockedObjects.swift"
-                  timestampString = "590227256.051862"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "87"
-                  endingLineNumber = "87"
-                  offsetFromSymbolStart = "864">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "PhotoBrowserUnitTests/UTMockedObjects.swift"
-            timestampString = "590224248.2304929"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "59"
-            endingLineNumber = "59"
-            landmarkName = "MockedEndpointRequestTask"
-            landmarkType = "3">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "PhotoBrowser.MockedEndpointRequestTask.loadCachedPage(searchString: Swift.Optional&lt;Swift.String&gt;, pageNumber: Swift.Optional&lt;Swift.Int&gt;) -&gt; Swift.Optional&lt;Foundation.Data&gt;"
-                  moduleName = "PhotoBrowser"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mcertain/GitHub/PhotoBrowser/PhotoBrowserUnitTests/UTMockedObjects.swift"
-                  timestampString = "590227254.971365"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "59"
-                  endingLineNumber = "59"
-                  offsetFromSymbolStart = "667">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "PhotoBrowserUnitTests.MockedEndpointRequestTask.loadCachedPage(searchString: Swift.Optional&lt;Swift.String&gt;, pageNumber: Swift.Optional&lt;Swift.Int&gt;) -&gt; Swift.Optional&lt;Foundation.Data&gt;"
-                  moduleName = "PhotoBrowserUnitTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mcertain/GitHub/PhotoBrowser/PhotoBrowserUnitTests/UTMockedObjects.swift"
-                  timestampString = "590227256.053866"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "59"
-                  endingLineNumber = "59"
-                  offsetFromSymbolStart = "667">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "PhotoBrowser/Model/PhotoDataManager.swift"
-            timestampString = "590224248.230551"
+            timestampString = "590355902.390432"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "210"
-            endingLineNumber = "210"
+            startingLineNumber = "225"
+            endingLineNumber = "225"
             landmarkName = "getPhotoDetails(atIndex:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1131,38 +525,70 @@
             endingLineNumber = "128"
             landmarkName = "captureVectorImages(withArgument:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #2 () -&gt; () in static PhotoBrowser.TestVectors.captureVectorImages(withArgument: Swift.Optional&lt;Swift.AnyObject&gt;) -&gt; ()"
-                  moduleName = "PhotoBrowser"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mcertain/GitHub/PhotoBrowser/PhotoBrowserUnitTests/TestVectors.swift"
-                  timestampString = "590227254.976579"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "129"
-                  endingLineNumber = "129"
-                  offsetFromSymbolStart = "29">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #2 () -&gt; () in static PhotoBrowserUnitTests.TestVectors.captureVectorImages(withArgument: Swift.Optional&lt;Swift.AnyObject&gt;) -&gt; ()"
-                  moduleName = "PhotoBrowserUnitTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mcertain/GitHub/PhotoBrowser/PhotoBrowserUnitTests/TestVectors.swift"
-                  timestampString = "590227256.055757"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "129"
-                  endingLineNumber = "129"
-                  offsetFromSymbolStart = "29">
-               </Location>
-            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PhotoBrowserUnitTests/PhotoBrowserUnitTests.swift"
+            timestampString = "590355902.3905489"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
+            landmarkName = "testAccessorsWhenModelIsFilled()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PhotoBrowserUnitTests/PhotoBrowserUnitTests.swift"
+            timestampString = "590355902.390934"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "72"
+            endingLineNumber = "72"
+            landmarkName = "testAccessorsWhenModelIsFilled()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PhotoBrowserUnitTests/PhotoBrowserUnitTests.swift"
+            timestampString = "590355902.391202"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "156"
+            endingLineNumber = "156"
+            landmarkName = "testArchiveAndUnarchiveFavoritesList()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PhotoBrowserUnitTests/PhotoBrowserUnitTests.swift"
+            timestampString = "590355902.3914649"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "179"
+            endingLineNumber = "179"
+            landmarkName = "testArchiveAndUnarchiveFavoritesList()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

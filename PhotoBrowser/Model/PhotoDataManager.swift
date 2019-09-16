@@ -107,6 +107,14 @@ class PhotoDataManager {
         return PhotoDataManager.singletonInstance
     }
     
+    static func RemoveInstance() {
+        if(PhotoDataManager.singletonInstance != nil) {
+            PhotoDataManager.singletonInstance?.clearStoredCache()
+            PhotoDataManager.singletonInstance?.clearFavoritesList()
+            PhotoDataManager.singletonInstance = nil
+        }
+    }
+    
     func clearStoredCache() {
         for i in 0..<cachedPages.count {
             cachedPages[i]?.photos?.photo?.removeAll()
@@ -114,6 +122,13 @@ class PhotoDataManager {
             cachedPages[i]?.photos = nil
         }
         cachedPages.removeAll()
+    }
+    
+    func clearFavoritesList() {
+        for i in 0..<favoriteList.count {
+            favoriteList[i].imageThumbnailData = nil
+        }
+        favoriteList.removeAll()
     }
     
     // Provide the ability to archive favorites list into a JSON file
@@ -205,7 +220,7 @@ class PhotoDataManager {
     
     func getPhotoDetails(atIndex: Int) -> PhotoAttributes? {
         let pageCount = atIndex / RESULTS_PER_PAGE
-        let pageIdx = atIndex % RESULTS_PER_PAGE
+        let pageIdx = (atIndex % RESULTS_PER_PAGE)
         
         guard cachedPages.indices.contains(pageCount) == true else {
             return nil
@@ -224,17 +239,37 @@ class PhotoDataManager {
     
     func setThumbnailImage(atIndex: Int, withData: Data) {
         let pageCount = atIndex / RESULTS_PER_PAGE
-        let pageIdx = atIndex % RESULTS_PER_PAGE
+        let pageIdx = (atIndex % RESULTS_PER_PAGE)
+        
+        guard cachedPages.indices.contains(pageCount) == true else {
+            return
+        }
+        guard ((cachedPages[pageCount]?.photos) != nil) else {
+            return
+        }
+        guard cachedPages[pageCount]?.photos?.photo?.indices.contains(pageIdx) == true else {
+            return
+        }
+        guard cachedPages[pageCount]?.photos?.photo?[pageIdx] != nil else {
+            return
+        }
+        
         cachedPages[pageCount]?.photos?.photo?[pageIdx].imageThumbnailData = withData
     }
     
     func GetFavoriteList() -> [PhotoAttributes] {
         return favoriteList
     }
+    
     func GetFavoriteListCount() -> Int {
         return favoriteList.count
     }
+    
     func AddToFavoriteList(newItem: PhotoAttributes) {
+        guard ExistsInFavoriteList(withID: newItem.id) == false else {
+            return
+        }
+        
         favoriteList.append(newItem)
     }
     
@@ -257,7 +292,11 @@ class PhotoDataManager {
         }
     }
     
-    func GetFavoriteListItem(atIndex: Int) -> PhotoAttributes {
+    func GetFavoriteListItem(atIndex: Int) -> PhotoAttributes? {
+        guard favoriteList.indices.contains(atIndex) == true else {
+            return nil
+        }
+        
         return favoriteList[atIndex]
     }
 
