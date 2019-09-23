@@ -39,11 +39,11 @@ class PhotoAttributes: Decodable, Encodable, Equatable {
     let server:     String?
     let title:      String?
     let url_s:      String?
-    let height_s:   String?
-    let width_s:    String?
+    let height_s:   IntOrString?
+    let width_s:    IntOrString?
     let url_m:      String?
-    let height_m:   String?
-    let width_m:    String?
+    let height_m:   IntOrString?
+    let width_m:    IntOrString?
     var imageThumbnailData:  Data?
     
     static func == (lhs: PhotoAttributes, rhs: PhotoAttributes) -> Bool {
@@ -87,6 +87,34 @@ class PhotoAttributes: Decodable, Encodable, Equatable {
         formatter.dateFormat = "MMM d yyyy h:mma"
         let dateText = formatter.string(from: Date(timeIntervalSince1970: TimeInterval(self.dateupload!)!))
         return dateText
+    }
+}
+
+enum IntOrString: Codable {
+    case integer(Int)
+    case string(String)
+    
+    init(from decoder: Decoder) throws {
+        let container = try decoder.singleValueContainer()
+        if let x = try? container.decode(Int.self) {
+            self = .integer(x)
+            return
+        }
+        if let x = try? container.decode(String.self) {
+            self = .string(x)
+            return
+        }
+        throw DecodingError.typeMismatch(IntOrString.self, DecodingError.Context(codingPath: decoder.codingPath, debugDescription: "Wrong type for IntOrString"))
+    }
+    
+    func encode(to encoder: Encoder) throws {
+        var container = encoder.singleValueContainer()
+        switch self {
+        case .integer(let x):
+            try container.encode(x)
+        case .string(let x):
+            try container.encode(x)
+        }
     }
 }
 
